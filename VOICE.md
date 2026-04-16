@@ -58,14 +58,23 @@ Within each product, use the same term for the same concept everywhere:
 - Pick one: "API key" or "token" or "credential" — then use it everywhere.
 - Document the chosen terms in each product's own CLAUDE.md or AGENTS.md.
 
+## Business model and positioning
+
+**Do not assume a product's business model from its repo documentation.** Internal docs (README, ARCHITECTURE, AGENTS) describe how a system works technically. They do not define how the product is sold, onboarded, or positioned to users.
+
+Before writing any user-facing copy, confirm with the product owner:
+- Is this managed, self-hosted, or both?
+- What's the primary user path?
+- What terminology should the marketing site use?
+- Who is the target audience?
+
+Each product's CLAUDE.md or AGENTS.md should define positioning explicitly. If it doesn't, **ask — do not guess**. Do not derive business model, pricing, or onboarding language from internal architecture docs.
+
 ## Per-product voice notes
 
-Each product may have its own flavor within these constraints:
-
-- **SaaS products** (Meterd, Simbee): "Sign up", "your account", "your organization". Never expose backend technology.
-- **Self-hosted products** (Herald, ShroudB): "Pull the image", "run the binary", "configure". Reference Docker, config files, CLI commands.
 - **Libraries** (Obfuskey): "Install", "import", "encode/decode". Lead with code examples.
 - **Portfolio**: First person is fine. More conversational than the product sites.
+- **All other products**: Check that product's CLAUDE.md for positioning guidance before writing copy. If positioning is not defined there, ask the owner.
 
 ## Review checklist
 
@@ -78,3 +87,4 @@ Before shipping any page with copy changes:
 5. Every docs page has its own content (not just links elsewhere)
 6. Consistent terminology with the rest of the site
 7. Active voice throughout
+8. Business model and positioning confirmed with owner (not assumed from repo docs)
