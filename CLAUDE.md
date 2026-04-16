@@ -13,8 +13,11 @@ Shared UI component and theme package for Skeptik marketing sites.
 ## Consuming this package
 
 1. Add dependency via `file:` reference pointing to this directory
-2. Import `@skeptik/ui/tokens.css` in your `globals.css` before any site-specific overrides
-3. Import components from `@skeptik/ui`
+2. In `next.config.ts`, add:
+   - `transpilePackages: ["@skeptik/ui"]`
+   - `turbopack: { root: path.join(import.meta.dirname, "<path-to-skeptik-parent>") }` — required for Turbopack to resolve linked packages outside the project root
+3. Import `@skeptik/ui/tokens.css` in your `globals.css` (after `@import "tailwindcss"`)
+4. Import components from `@skeptik/ui`
 
 ### Token customization
 

@@ -26,7 +26,8 @@ export interface FooterLinkGroup {
 export interface SiteHeaderProps {
   logo: ReactNode
   nav: NavItem[]
-  actions: CTAAction[]
+  actions?: CTAAction[]
+  actionSlot?: ReactNode
   maxWidth?: string
   mobileNav?: ReactNode
 }
@@ -41,6 +42,7 @@ export interface SiteFooterProps {
   }
   trailingText?: string
   maxWidth?: string
+  children?: ReactNode
 }
 
 export interface CodeTabDefinition {

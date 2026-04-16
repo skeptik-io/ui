@@ -10,6 +10,7 @@ export function SiteHeader({
   logo,
   nav,
   actions,
+  actionSlot,
   maxWidth = "max-w-6xl",
   mobileNav,
 }: SiteHeaderProps) {
@@ -46,7 +47,7 @@ export function SiteHeader({
             )
           })}
 
-          {actions.map((action) => (
+          {actions?.map((action) => (
             <Button
               key={action.href}
               variant={action.variant ?? "default"}
@@ -62,6 +63,8 @@ export function SiteHeader({
               {action.label}
             </Button>
           ))}
+
+          {actionSlot}
         </nav>
 
         {mobileNav}

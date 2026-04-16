@@ -9,6 +9,7 @@ export function SiteFooter({
   legal,
   trailingText,
   maxWidth = "max-w-6xl",
+  children,
 }: SiteFooterProps) {
   const gridCols = linkGroups.length <= 2
     ? "sm:grid-cols-3"
@@ -48,6 +49,8 @@ export function SiteFooter({
             </div>
           ))}
         </div>
+
+        {children}
 
         <div className="mt-10 flex items-center justify-between border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
