@@ -1,5 +1,12 @@
 @custom-variant dark (&:is(.dark *));
 
+/* Scan @skeptik/ui components so Tailwind generates the classes they use.
+   Paths are resolved relative to this file. Both src (linked via file:) and
+   dist (published) are covered so consumers work either way. */
+@source "../components/**/*.{ts,tsx}";
+@source "../hooks/**/*.{ts,tsx}";
+@source "../../dist/**/*.js";
+
 @theme inline {
   /* ── Ink neutral scale ─────────────────────────────────────────────── */
   --color-ink-0: #07080a;
