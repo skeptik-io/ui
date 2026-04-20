@@ -1,10 +1,9 @@
 @custom-variant dark (&:is(.dark *));
 
-/* Scan @skeptik/ui components so Tailwind generates the classes they use.
-   Paths are resolved relative to this file. Both src (linked via file:) and
-   dist (published) are covered so consumers work either way. */
-@source "../components/**/*.{ts,tsx}";
-@source "../hooks/**/*.{ts,tsx}";
+/* Scan @skeptik/ui's compiled JS so Tailwind generates the classes used
+   inside shared components (SiteFooter's sm:grid-cols-*, etc.). The path
+   is resolved relative to this file and points at dist/ — the only
+   JS tree shipped in the published package (see "files" in package.json). */
 @source "../../dist/**/*.js";
 
 @theme inline {
