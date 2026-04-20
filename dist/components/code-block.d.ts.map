@@ -1,0 +1,1 @@
+{"version":3,"file":"code-block.d.ts","sourceRoot":"","sources":["../../src/components/code-block.tsx"],"names":[],"mappings":"AAGA,wBAAgB,SAAS,CAAC,EACxB,QAAQ,EACR,QAAQ,EACR,SAAS,EACT,QAAe,GAChB,EAAE;IACD,QAAQ,EAAE,MAAM,CAAA;IAChB,QAAQ,CAAC,EAAE,MAAM,CAAA;IACjB,SAAS,CAAC,EAAE,MAAM,CAAA;IAClB,QAAQ,CAAC,EAAE,OAAO,CAAA;CACnB,2CAkBA"}

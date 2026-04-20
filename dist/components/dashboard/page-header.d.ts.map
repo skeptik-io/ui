@@ -1,0 +1,1 @@
+{"version":3,"file":"page-header.d.ts","sourceRoot":"","sources":["../../../src/components/dashboard/page-header.tsx"],"names":[],"mappings":"AAEA,wBAAgB,UAAU,CAAC,EACzB,KAAK,EACL,WAAW,EACX,QAAQ,EACR,SAAS,GACV,EAAE;IACD,KAAK,EAAE,MAAM,CAAA;IACb,WAAW,CAAC,EAAE,MAAM,CAAA;IACpB,QAAQ,CAAC,EAAE,KAAK,CAAC,SAAS,CAAA;IAC1B,SAAS,CAAC,EAAE,MAAM,CAAA;CACnB,2CAcA"}
